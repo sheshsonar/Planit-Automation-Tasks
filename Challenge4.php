@@ -60,8 +60,7 @@
 function tempConvert($valueConvert,$convertFrom,$convertTo)
 {
     
-
-   if($convertFrom == "fahrenheit")     // If user choose fahrenheit as a option
+  if($convertFrom == "fahrenheit")     // If user choose fahrenheit as a option
    { //Start of fahrenheit if----------
     if($convertFrom == "fahrenheit" && $convertTo == "celsius") 
     {
@@ -82,7 +81,7 @@ function tempConvert($valueConvert,$convertFrom,$convertTo)
         
             else{$conversion = ($valueConvert +273.15);}
    }//End of celsius if statement------
-   
+
 
    else if($convertFrom == "Kelvin") // If user choose Kelvin as a option
    {//Start of Kelvin if----------
@@ -101,9 +100,9 @@ function tempConvert($valueConvert,$convertFrom,$convertTo)
 }
 
 
-$valueConvert= $_POST['valueConvert'];
-$convertFrom = $_POST['convertFrom'];
-$convertTo = $_POST['convertTo'];
+$valueConvert= $_POST['valueConvert']; // Getting a value to convert from user example. 34, 34, 123 etc.
+$convertFrom = $_POST['convertFrom']; // Convert from Example celsius,fahrenheit or Kelvin.
+$convertTo = $_POST['convertTo'];  // Convert to Example celsius,fahrenheit or Kelvin.
 
 
 
